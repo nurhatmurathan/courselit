@@ -8,7 +8,7 @@ export default async function connectToDatabase(): Promise<MongoClient> {
 
     const options = {
         useNewUrlParser: true,
-        serverSelectionTimeoutMS: 5000,
+        serverSelectionTimeoutMS: 10000,
     };
 
     const dbConnection = await mongoose.connect(
